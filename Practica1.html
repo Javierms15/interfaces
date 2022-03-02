@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang ="en">
+
 <head>
-<title> Formulario</title>
+  <title> Formulario</title>
 </head>
+
 <body>
 
+  <h1>Formulario</h1>
+  <h2>Introduzca sus datos personales</h2>
   <form action="" >
     <p>
     <label for="nombre">Nombre:</label>
     <input type="text" name="nombre" id="nombre" title='Introduce
-    your name' autocomplete="nombre"/>
-    <input type="submit" value="Submit" /><br>
+    tu nombre' autocomplete="name" required="required" /><br>
     
     <label for="apellido">Primer apellido:</label>
-    <input type="text" name="nombre" id="nombre" title='Introduce
-    your name' autocomplete="nombre"/>
-    <input type="submit" value="Submit" /><br>
+    <input type="text" name="apellido" id="apellido" title='Introduce
+    tu primer apellido' autocomplete="given-name" required="required"/><br>
 
     <label for="fecha">Fecha de Nacimiento:</label>
-    <input type="date" name="nombre" id="nombre" title='Introduce
-    your name' autocomplete="nombre"/>
-    <input type="submit" value="Submit" /><br>
+    <input type="date" name="fecha" id="fecha" title='Introduce
+    tu fecha de nacimiento' autocomplete="bday" required="required"/><br>
 
     <label for="e-mail">e-mail:</label>
-    <input type="text" name="nombre" id="nombre" title='Introduce
-    your name' autocomplete="nombre"/>
-    <input type="submit" value="Submit" /><br>
+    <input type="text" name="e-mail" id="e-mail" title='Introduce
+    tu e-mail' autocomplete="email" required="required"/><br>
 
-    <label for="apellido">Telefono:</label>
-    <input type="tel" name="nombre" id="nombre" title='Introduce
-    your name' autocomplete="nombre"/>
-    <input type="submit" value="Submit" /><br>
+    <label for="telefono">Telefono:</label>
+    <input type="tel" name="telefono" id="telefono" title='Introduce
+    tu numero de telefono' autocomplete="off" required="required" placeholder="123-45-67-89"
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}"/><br>
+   
 
-    <label for="apellido">Password:</label>
-    <input type="password" name="nombre" id="nombre" title='Introduce
-    your name' autocomplete="nombre"/>
-    <input type="submit" value="Submit" /><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" title='Introduce
+    tu contraseña' autocomplete="new-password" required="required"/>
+    <br>
 
-    <label for="apellido">Color favorito:</label>
-    <input type="text" name="nombre" id="nombre" title='Introduce
-    your name' autocomplete="nombre"/>
+    <label for="color">Color favorito:</label>
+    <input type="text" name="color" id="color" title='Introduce
+    tu color favorito' autocomplete="color" required="required"/><br>
     <input type="submit" value="Submit" /><br>
     
     </p>
